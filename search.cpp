@@ -7,34 +7,7 @@ int n;
     
 
 
-// int bsearch(int start, int end)
-//     {    /* code */
 
-//         int mid = (start+end)/2;
-//         int m = mid;
-//         if(A[mid]==n){
-//         return mid;
-            
-
-//     }
-//     if(A[m]<n)
-//     {
-//         start = m+1;
-        
-//         m = (start+end)/2;
-//         return bsearch(start,end);
-
-//     }
-//     if(A[m]>n)
-//     {
-        
-//         end= m-1;
-//         m = (start+end)/2;
-//         return bsearch(start,end);
-//     }
-//     return 0;
-
-//     }
     
 
     int bsearch(int A[], int l, int r, int x) 
@@ -42,23 +15,18 @@ int n;
     if (r >= l) { 
         int mid = l + (r - l) / 2; 
   
-        // If the element is present at the middle 
-        // itself 
+        
         if (A[mid] == x) 
             return mid; 
-  
-        // If element is smaller than mid, then 
-        // it can only be present in left subarray 
+   
         if (A[mid] > x) 
             return bsearch(A, l, mid - 1, x); 
   
-        // Else the element can only be present 
-        // in right subarray 
+       
         return bsearch(A, mid + 1, r, x); 
     } 
   
-    // We reach here when element is not 
-    // present in array 
+    
     return -1; 
 } 
 int main()
