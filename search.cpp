@@ -15,10 +15,11 @@ int n;
     if (r >= l) { 
         int mid = l + (r - l) / 2; 
   
-        
+       
         if (A[mid] == x) 
             return mid; 
-   
+  
+        
         if (A[mid] > x) 
             return bsearch(A, l, mid - 1, x); 
   
