@@ -4,6 +4,7 @@ int main(){
     
     int a[] = {1,2,3,4,76,89};
     int length = sizeof(a)/sizeof(int);
+    
     cout<<"list of numbers in array"<<endl;
     for (int i = 0; i < length; i++)
     {   
@@ -13,6 +14,7 @@ int main(){
         /* code */
     }
     cout<<"input the number to insert in array"<<endl;
+    cout<<endl;
     int n;
     cin>>n;
     cout<<"input the index(from 0 to 5 index) where to insert the number";
@@ -28,6 +30,31 @@ int main(){
     length++;
     for (int i = 0; i < length; i++)
     {   cout<<a[i];
+        cout<<endl;
+        /* code */
+        /* code */
+    }
+
+    cout<<"input the number to delet from the array"<<endl;
+    int m;
+    cin>>m;
+    int t =1;
+    for (int i = 0; i < length; i++)
+    {
+        if (a[i]==m){
+        
+                /* code */
+                            a[i] = a[i+1];
+                            
+                            cout<<a[i];
+
+            
+            
+            /* code */
+        }
+            
+           cout<<a[i];
+
         cout<<endl;
         /* code */
         /* code */
